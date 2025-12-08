@@ -47,16 +47,17 @@ export async function read(file: File) {
 						'NEUT#': toNumberValue(row[8]!),
 						'LYMPH#': toNumberValue(row[9]!),
 						'MID#': toNumberValue(row[10]!),
-						HbA1c: toNumberValue(row[11]!),
-						ALT: toNumberValue(row[12]!),
-						AST: toNumberValue(row[13]!),
-						TBIL: toNumberValue(row[14]!),
-						Cr: toNumberValue(row[15]!),
-						BUN: toNumberValue(row[16]!),
-						TC: toNumberValue(row[17]!),
-						TG: toNumberValue(row[18]!),
-						'LDL-C': toNumberValue(row[19]!),
-						'HDL-C': toNumberValue(row[20]!),
+						FBG: toNumberValue(row[11]!),
+						HbA1c: toNumberValue(row[12]!),
+						ALT: toNumberValue(row[13]!),
+						AST: toNumberValue(row[14]!),
+						TBIL: toNumberValue(row[15]!),
+						Cr: toNumberValue(row[16]!),
+						BUN: toNumberValue(row[17]!),
+						TC: toNumberValue(row[18]!),
+						TG: toNumberValue(row[19]!),
+						'LDL-C': toNumberValue(row[20]!),
+						'HDL-C': toNumberValue(row[21]!),
 					},
 				};
 			}
@@ -79,6 +80,7 @@ export interface ItemData {
 		'NEUT#': ItemValue;
 		'LYMPH#': ItemValue;
 		'MID#': ItemValue;
+		FBG: ItemValue;
 		HbA1c: ItemValue;
 		ALT: ItemValue;
 		AST: ItemValue;
